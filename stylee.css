@@ -1,0 +1,218 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+*
+
+.logo {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .logo img {
+    width: 40px;
+    margin-right: 0.6rem;
+    margin-top: -0.6rem;
+  }
+  
+  .logo h3 {
+    color: var(--darkTwo);
+    font-size: 1.55rem;
+    line-height: 1.2;
+    font-weight: 700;
+  }
+.container {
+    position: relative;
+    max-width: 81rem;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 3rem;
+    z-index: 10;
+  }
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: white;
+    border-bottom: 1px solid #ccc;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    height: 60px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #28a745;
+}
+
+#navbar.scrolled {
+    background: #28a745;
+}
+
+#navbar.scrolled a {
+    color: white;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.9rem 1.9rem;
+    color: #ffffff !important;
+    background: #28a745;
+    border-radius: 16px;
+    text-transform: capitalize;
+    transition: 0.3s;
+  }
+  
+  .btn:hover {
+    background: #28a745;
+    transform: scale(1) !important;
+  }
+
+.showcase-area .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .big-title {
+    font-size: 1.4rem;
+    color: white;
+    text-transform: capitalize;
+    line-height: 1.4;
+  }
+  
+  .text {
+    color: white;
+    font-size: 1.1rem;
+    margin: 1.9rem 0 2.5rem;
+    max-width: 600px;
+    line-height: 2.3;
+  }
+  
+  .showcase-area .btn {
+    box-shadow: 0 0 40px 2px rgba(0, 0, 0, 0.05);
+  }
+
+  .person {
+    width: 123%;
+    transform: translate(15%, 25px);
+  }
+  
+.hero {
+    background: url('hero-plant.jpg') no-repeat center center/cover;
+    color: white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background: #28a745;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.cta-button:hover {
+    background: #218838;
+}
+
+section {
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.plants-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.plant {
+    flex: 1;
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    min-width: 250px;
+    max-width: 300px;
+}
+
+.plant img {
+    max-width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 15px;
+}
+
+footer {
+    background: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+}
+
+.social-icons img {
+    width: 30px;
+    margin: 0 10px;
+    transition: opacity 0.3s;
+}
+
+.social-icons img:hover {
+    opacity: 0.7;
+}
+
+.banner video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+@media(min-aspect-ratio: 16/9){
+    .banner video{
+        width: 100%;
+        height: auto;
+    }
+}
